@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9087f62262f418596ff882326ef681, type: 3}
+  m_Name: GirlMakeUpLevelSetUpScriptableObject
+  m_EditorClassIdentifier: 
+  levelName: GirlMakeUp
+  levelBg: {fileID: 0}
+  widthDivide: 16
+  heightDivide: 16
+  changeableSO:
+  - {fileID: 11400000, guid: c2965c447e9834809a4850d58c30498d, type: 2}
+  - {fileID: 11400000, guid: 5d8c3c6976c8d40d28eb2e4f20c1c2c3, type: 2}
+  - {fileID: 11400000, guid: a2800ae288f374185b71d4382397e238, type: 2}
+  - {fileID: 11400000, guid: 8966e2dc085054d2c9ee7e395e3406f8, type: 2}
+  - {fileID: 11400000, guid: 0867dc0791f114736ae6a49c9e267700, type: 2}
+  - {fileID: 11400000, guid: 8c44c8d6982e947678e82c1eaa46ea24, type: 2}

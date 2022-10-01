@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
+  m_Name: 4EyeBrow
+  m_EditorClassIdentifier: 
+  itemId: 4
+  counter: 0
+  itemName: EyeBrow
+  buttonSprite: {fileID: 0}
+  itemArray:
+  - {fileID: -2221905579594846062, guid: 64fe795da1bce439e99e34d94fad2f31, type: 3}
+  - {fileID: 8337937538435733398, guid: 64fe795da1bce439e99e34d94fad2f31, type: 3}
+  - {fileID: 3078226200369244658, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  - {fileID: 792538450687254331, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  - {fileID: 1560319577188664042, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  - {fileID: -1792986976208679661, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  - {fileID: 5028712287604099812, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  - {fileID: 4046153673784143958, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}

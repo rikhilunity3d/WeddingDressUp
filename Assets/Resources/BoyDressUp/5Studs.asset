@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
+  m_Name: 5Studs
+  m_EditorClassIdentifier: 
+  itemId: 5
+  counter: 0
+  itemName: Studs
+  buttonSprite: {fileID: 0}
+  itemArray:
+  - {fileID: 8349466496558968629, guid: 0a7b4535e24404a88b9420cb36988332, type: 3}
+  - {fileID: 677810904281896367, guid: 0a7b4535e24404a88b9420cb36988332, type: 3}
+  - {fileID: 8020515249245763769, guid: 0a7b4535e24404a88b9420cb36988332, type: 3}
+  - {fileID: 843493983124099787, guid: 0a7b4535e24404a88b9420cb36988332, type: 3}
+  - {fileID: -3800442063705990680, guid: 0a7b4535e24404a88b9420cb36988332, type: 3}

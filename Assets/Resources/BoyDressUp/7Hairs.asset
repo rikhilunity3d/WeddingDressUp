@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
+  m_Name: 7Hairs
+  m_EditorClassIdentifier: 
+  itemId: 7
+  counter: 0
+  itemName: Hairs
+  buttonSprite: {fileID: 0}
+  itemArray:
+  - {fileID: 3086892268959474997, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
+  - {fileID: -7657856146046659819, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
+  - {fileID: 4243256113053293406, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
+  - {fileID: 5329384605268220068, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
+  - {fileID: -6366701702649826822, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
+  m_Name: 1Shoes
+  m_EditorClassIdentifier: 
+  itemId: 1
+  counter: 0
+  itemName: Shoes
+  buttonSprite: {fileID: 0}
+  itemArray:
+  - {fileID: 1066559692330807856, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
+  - {fileID: -2716586518846930264, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
+  - {fileID: 1424594846699957518, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
+  - {fileID: 3209597801130277596, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
+  - {fileID: -5513614899905975676, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
