@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 5Lips
   m_EditorClassIdentifier: 
   itemId: 5
-  counter: 0
+  counter: 5
   itemName: Lips
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: -2466498159722171762, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: 9034435374853094154, guid: 7c307e3936f9544ecac249353c2c980b, type: 3}
   - {fileID: -438153969497250151, guid: 7c307e3936f9544ecac249353c2c980b, type: 3}
@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 7042592513176925221, guid: 7c307e3936f9544ecac249353c2c980b, type: 3}
   - {fileID: 3556882445001108933, guid: 7c307e3936f9544ecac249353c2c980b, type: 3}
   - {fileID: -2677833984053438096, guid: 7c307e3936f9544ecac249353c2c980b, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1

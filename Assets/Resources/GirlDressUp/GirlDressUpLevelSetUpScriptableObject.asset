@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GirlDressUpLevelSetUpScriptableObject
   m_EditorClassIdentifier: 
   levelName: GirlDressUp
-  levelBg: {fileID: 0}
+  levelBg: {fileID: 156401083360210646, guid: 6af7024262c084e58a9c8cd65bd0f6a7, type: 3}
   widthDivide: 16
   heightDivide: 16
   changeableSO:
@@ -23,3 +23,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75005c4135ca24ecab1079d4095bc811, type: 2}
   - {fileID: 11400000, guid: b5ba08b74975040eea260f24c9042fd8, type: 2}
   - {fileID: 11400000, guid: b5058fc8ecd5f44bbbfc789f7c0d47a8, type: 2}
+  subSetChangableSO:
+  - {fileID: 11400000, guid: c2965c447e9834809a4850d58c30498d, type: 2}
+  - {fileID: 11400000, guid: 5d8c3c6976c8d40d28eb2e4f20c1c2c3, type: 2}
+  - {fileID: 11400000, guid: a2800ae288f374185b71d4382397e238, type: 2}
+  - {fileID: 11400000, guid: 8966e2dc085054d2c9ee7e395e3406f8, type: 2}
+  - {fileID: 11400000, guid: 0867dc0791f114736ae6a49c9e267700, type: 2}
+  - {fileID: 11400000, guid: 8c44c8d6982e947678e82c1eaa46ea24, type: 2}

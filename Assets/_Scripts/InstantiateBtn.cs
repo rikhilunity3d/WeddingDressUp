@@ -48,29 +48,31 @@ public class InstantiateBtn : MonoBehaviour
             Button[] btn = buttonParent.transform.GetComponentsInChildren<Button>();
             for (int k = 0; k < btn.Length; k++)
             {
-                print("bttonArray Lenght" + btn.Length);
+                //print("bttonArray Lenght" + btn.Length);
                 Destroy(btn[k].gameObject);
             }
                 for (int j = 0; j < LevelSetUpSO[i].ChangeableSO.Length; j++)
                 {
                     int id = j + 1;
                     GameObject newButton = Instantiate(buttonPrefab, buttonParent.transform);
-
-                
-
-                    newButton.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, buttonHeight);
+                    newButton.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, buttonWidth);
                     newButton.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, buttonWidth);
                     newButton.GetComponent<Image>().preserveAspect = true;
 
                     newButton.GetComponent<Image>().sprite = LevelSetUpSO[i].ChangeableSO[j].ButtonSprite;
                     newButton.GetComponent<Button>().onClick.AddListener(() =>
                     ChangeableButtonClick(LevelSetUpSO[i].ChangeableSO[id - 1]));
-
-                Debug.Log("Item Name " + LevelSetUpSO[i].ChangeableSO[id - 1].ItemName + " Counter is " + LevelSetUpSO[i].ChangeableSO[id - 1].Counter);
-                    
-                    //EventHandler.Instance.InvokeOnLoadSpriteFromSO(LevelSetUpSO[i].ChangeableSO[id - 1]);
-
-            }
+                }
+                
+                for(int z=0; z<LevelSetUpSO[i].SubSetChangableSO.Length; z++)
+                {
+                    if (LevelSetUpSO[i].SubSetChangableSO.Length != 0)
+                    {
+                        int id = z + 1;
+                        Debug.Log("Item Name " + LevelSetUpSO[i].SubSetChangableSO[id - 1].ItemName + " Counter is " + LevelSetUpSO[i].SubSetChangableSO[id - 1].Counter);
+                        EventHandler.Instance.InvokeOnLoadSpriteFromSO(LevelSetUpSO[i].SubSetChangableSO[id - 1]);
+                    }
+                }
         }
     }
 

@@ -51,7 +51,7 @@ public class AdsManager : GenericSingleton<AdsManager>
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-8179797674906935/9544807207";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-8179797674906935/3267605943";
+        string adUnitId = "ca-app-pub-8179797674906935/3998065816";
 #else
             string adUnitId = "unexpected_platform";
 #endif
@@ -77,7 +77,7 @@ public class AdsManager : GenericSingleton<AdsManager>
 #if UNITY_ANDROID
         string adUnitId = "ca-app-pub-8179797674906935/6918643865";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-8179797674906935/7553786579";
+        string adUnitId = "ca-app-pub-8179797674906935/2684984148";
 #else
         string adUnitId = "unexpected_platform";
 #endif
@@ -128,8 +128,10 @@ public class AdsManager : GenericSingleton<AdsManager>
 
     private void GameOver()
     {
+        Debug.Log("In Interstitial Ad Show Method");
         if (this.interstitial.IsLoaded())
         {
+            Debug.Log("Interstitial Ad Show");
             this.interstitial.Show();
         }
     }

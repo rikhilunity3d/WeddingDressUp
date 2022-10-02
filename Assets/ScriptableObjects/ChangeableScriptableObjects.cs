@@ -26,5 +26,6 @@ public class ChangeableScriptableObjects : ScriptableObject
     public Sprite ButtonSprite { get => buttonSprite; }
     public Sprite[] ItemArray { get => itemArray; set => itemArray = value; }
     
+
     #endregion
 }

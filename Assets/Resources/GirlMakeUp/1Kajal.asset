@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 1Kajal
   m_EditorClassIdentifier: 
   itemId: 1
-  counter: 0
+  counter: 1
   itemName: Kajal
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: -1687373302902897474, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: 7151920860923386219, guid: 54b0cd6ff58b948e4a3b22742d8f4fcf, type: 3}
   - {fileID: -3976215614145084314, guid: 54b0cd6ff58b948e4a3b22742d8f4fcf, type: 3}
@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: -3279649965044661955, guid: 54b0cd6ff58b948e4a3b22742d8f4fcf, type: 3}
   - {fileID: -6992782911811223426, guid: 54b0cd6ff58b948e4a3b22742d8f4fcf, type: 3}
   - {fileID: 8388309455805511758, guid: 54b0cd6ff58b948e4a3b22742d8f4fcf, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1

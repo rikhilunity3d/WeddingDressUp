@@ -15,7 +15,7 @@ MonoBehaviour:
   itemId: 7
   counter: 0
   itemName: Hairs
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: -7949836360273042558, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: 3086892268959474997, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
   - {fileID: -7657856146046659819, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 4EyeBrow
   m_EditorClassIdentifier: 
   itemId: 4
-  counter: 0
+  counter: 2
   itemName: EyeBrow
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: 7286175654567948112, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: -2221905579594846062, guid: 64fe795da1bce439e99e34d94fad2f31, type: 3}
   - {fileID: 8337937538435733398, guid: 64fe795da1bce439e99e34d94fad2f31, type: 3}
@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: -1792986976208679661, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
   - {fileID: 5028712287604099812, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
   - {fileID: 4046153673784143958, guid: 3e7b010efec264f5ab8eda562a21eead, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1

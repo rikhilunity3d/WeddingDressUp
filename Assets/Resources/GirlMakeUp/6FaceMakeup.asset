@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 6FaceMakeup
   m_EditorClassIdentifier: 
   itemId: 6
-  counter: 0
+  counter: 1
   itemName: FaceMakeUp
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: 4248242841324548843, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: -8558257070068049180, guid: b6acfc42659a74a2ca4aa5cf29f8e08c, type: 3}
   - {fileID: 7983684021675753585, guid: b6acfc42659a74a2ca4aa5cf29f8e08c, type: 3}
@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: -7661393489211939111, guid: b6acfc42659a74a2ca4aa5cf29f8e08c, type: 3}
   - {fileID: -7475231862582403066, guid: b6acfc42659a74a2ca4aa5cf29f8e08c, type: 3}
   - {fileID: -6727919039226387545, guid: b6acfc42659a74a2ca4aa5cf29f8e08c, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1

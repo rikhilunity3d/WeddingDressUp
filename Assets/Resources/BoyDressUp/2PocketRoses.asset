@@ -15,7 +15,7 @@ MonoBehaviour:
   itemId: 2
   counter: 0
   itemName: PocketRose
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: 3831904677869872152, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: 1854556426101735554, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}
   - {fileID: 8582698447750304375, guid: 7b2037f33e84446f9b7117ba6639c32d, type: 3}

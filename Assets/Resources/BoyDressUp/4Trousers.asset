@@ -15,7 +15,7 @@ MonoBehaviour:
   itemId: 4
   counter: 0
   itemName: Trousers
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: -8556943763508480657, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: -2470005536656589004, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}
   - {fileID: -7696527652957580937, guid: 0ff3d1820e62c4351af0931f411dae13, type: 3}

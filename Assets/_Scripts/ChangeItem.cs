@@ -8,7 +8,7 @@ public class ChangeItem : MonoBehaviour
     [SerializeField]
     int id;
    private void OnEnable() {
-       Debug.Log("Change Item OnEnable");
+//       Debug.Log("Change Item OnEnable");
        EventHandler.Instance.OnChangeableAction += ChangeItemSprite;
        EventHandler.Instance.OnLoadSpriteFromSO += LoadSpriteFromSO;
 
@@ -19,7 +19,7 @@ public class ChangeItem : MonoBehaviour
         
     }
     private void OnDisable() {
-       Debug.Log("Change Item OnDisable");
+       //Debug.Log("Change Item OnDisable");
         EventHandler.Instance.OnChangeableAction -= ChangeItemSprite;
         EventHandler.Instance.OnLoadSpriteFromSO -= LoadSpriteFromSO;
     }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
+  m_Name: 11Veil
+  m_EditorClassIdentifier: 
+  itemId: 11
+  counter: 1
+  itemName: Veil
+  buttonSprite: {fileID: 3372612128568009053, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
+  itemArray:
+  - {fileID: -7997083897236007093, guid: 8da5dbd4865b44d9799c877954d9ec52, type: 3}
+  - {fileID: 5100098856681297639, guid: 8da5dbd4865b44d9799c877954d9ec52, type: 3}
+  - {fileID: 6996087237112888878, guid: 8da5dbd4865b44d9799c877954d9ec52, type: 3}
+  - {fileID: 8934206532273243076, guid: 8da5dbd4865b44d9799c877954d9ec52, type: 3}
+  - {fileID: -7265401334063153069, guid: 8da5dbd4865b44d9799c877954d9ec52, type: 3}

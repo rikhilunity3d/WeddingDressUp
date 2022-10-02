@@ -19,7 +19,6 @@ public class EventHandler : GenericSingleton<EventHandler>
 
     public  event Action<int> OnLoadLevelAction;
 
-    ChangeableScriptableObjects changeableSO;
     public  event Action<ChangeableScriptableObjects> OnChangeableAction;
     public event Action<ChangeableScriptableObjects> OnLoadSpriteFromSO;
 

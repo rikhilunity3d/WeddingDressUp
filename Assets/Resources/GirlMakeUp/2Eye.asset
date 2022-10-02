@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 2Eye
   m_EditorClassIdentifier: 
   itemId: 2
-  counter: 0
+  counter: 1
   itemName: Eye
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: 213776729812851084, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: -112968808170193824, guid: 87af20c27d9e546c980e8a892edc090c, type: 3}
   - {fileID: 4361698900330920347, guid: 87af20c27d9e546c980e8a892edc090c, type: 3}
@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 6747079671284440124, guid: 87af20c27d9e546c980e8a892edc090c, type: 3}
   - {fileID: 2017221507833849691, guid: 87af20c27d9e546c980e8a892edc090c, type: 3}
   - {fileID: 2929798753575806136, guid: 87af20c27d9e546c980e8a892edc090c, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1

@@ -20,6 +20,9 @@ public class LevelSetUpScriptableObject : ScriptableObject
     [SerializeField]
     ChangeableScriptableObjects[] changeableSO;
 
+    [SerializeField]
+    ChangeableScriptableObjects[] subSetChangableSO;
+
     //Getters are here of above variables
     #region
     public string LevelName
@@ -31,6 +34,7 @@ public class LevelSetUpScriptableObject : ScriptableObject
     public float HeighDivide
     { get => heightDivide; }
     public ChangeableScriptableObjects[] ChangeableSO { get => changeableSO; }
+    public ChangeableScriptableObjects[] SubSetChangableSO { get => subSetChangableSO; }
 
     #endregion
 }

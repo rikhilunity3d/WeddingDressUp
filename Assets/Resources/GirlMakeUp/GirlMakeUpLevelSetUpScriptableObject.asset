@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GirlMakeUpLevelSetUpScriptableObject
   m_EditorClassIdentifier: 
   levelName: GirlMakeUp
-  levelBg: {fileID: 0}
+  levelBg: {fileID: 156401083360210646, guid: 6af7024262c084e58a9c8cd65bd0f6a7, type: 3}
   widthDivide: 16
   heightDivide: 16
   changeableSO:

@@ -1,4 +1,4 @@
-///ca-app-pub-8179797674906935~2337667656
+///ca-app-pub-8179797674906935~6624229151
 using System.Collections;
 using UnityEngine;
 using System;
@@ -27,7 +27,7 @@ public class GameManager : GenericSingleton<GameManager>
 
     [SerializeField]SpriteRenderer backgroundImage;
 
-    [SerializeField] GameObject[] dollBody;
+    [SerializeField] GameObject[] body;
 
     [SerializeField] SpriteRenderer[] levelBgImage;
 
@@ -35,6 +35,9 @@ public class GameManager : GenericSingleton<GameManager>
     Camera cam;
 
     LevelSetUpScriptableObject LevelSetUpSO;
+
+    public GameObject[] Body{ get => body;}
+
     void Start()
     { 
 
@@ -161,15 +164,25 @@ public class GameManager : GenericSingleton<GameManager>
         }     
    }
 
+    public void Home()
+    {
+        print(i + " in Home");
+        ScreenAreas[i-1].SetActive(false);
+        UIPanels[i-1].SetActive(false);
+        i = 0;
+        ScreenAreas[i].SetActive(true);
+        UIPanels[i].SetActive(true);
+    }
+
     private void LoadLevel(int levelId)
     {
-        for(int i=1;i<=dollBody.Length;i++)
+        for(int i=1;i<=body.Length;i++)
         {
-            dollBody[i - 1].SetActive(false);
+            body[i - 1].SetActive(false);
             print("False LevelId is " + levelId);
             if (levelId == i)
             {
-                dollBody[i-1].SetActive(true);
+                body[i-1].SetActive(true);
                 //levelBgImage[i - 1].sprite = LevelSetUpSO.LevelBg;
                 print("LevelId is " + levelId);
             }

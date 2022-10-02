@@ -14,36 +14,80 @@ public class UIManager : GenericSingleton<UIManager>
     [SerializeField]
     Button btnMore;
     [SerializeField]
-    Button btnShare;
+    Button btnNext;
+
     [SerializeField]
-    Button GamePlayArea1;
-    
-    
+    Button btnHome;
 
-
+    int levelCount = 1;
     private void Start()
     {
         btnPlay.onClick.AddListener(HideGameObject);
         btnRateUs.onClick.AddListener(RateApp);
         btnRestore.onClick.AddListener(RestoreApp);
         btnMore.onClick.AddListener(MoreApps);
-        btnShare.onClick.AddListener(ShareApp);
-
-        GamePlayArea1.onClick.AddListener(HideGameObject);
-        GamePlayArea1.onClick.AddListener(()=>LoadLevel(1));
-        
+        btnNext.onClick.AddListener(LoadLevel);
+        btnHome.onClick.AddListener(LoadHome);
     }
 
-    private void LoadLevel(int i)=>EventHandler.Instance.InvokeOnLoadLevel(i);
-    
+    private void LoadHome()
+    {
+        EventHandler.Instance.InvokeOnButtonClickSound();
+        GameManager.Instance.Home();
+    }
 
-    public void ShowInterestratialAd() => EventHandler.Instance.InvokeOnShowInterstitialAd();
+    public void LoadLevel()
+    {
+        Debug.Log("Click on NextButton");
+        LoadNextLevel(levelCount);
+    }
+    public void LoadPreviousLevel()
+    {
+        Debug.Log("Click on PreviousButton");
+        LoadPreviousLevel(levelCount);
+    }
+
+    private void LoadNextLevel(int i) {
+        EventHandler.Instance.InvokeOnButtonClickSound();
+        if (GameManager.Instance.Body.Length>=i)
+        {
+            EventHandler.Instance.InvokeOnLoadLevel(i);
+            i++;
+            levelCount = i;
+        }
+        else
+        {
+            GameManager.Instance.Next();
+        }
+    }
+
+    private void LoadPreviousLevel(int i)
+    {
+        EventHandler.Instance.InvokeOnButtonClickSound();
+        if (i>0)
+        {
+            i--;
+            levelCount = i;
+            EventHandler.Instance.InvokeOnLoadLevel(i);
+        }
+        else
+        {
+            GameManager.Instance.Back();
+        }
+    }
+
+    public void ShowInterestratialAd() {
+        EventHandler.Instance.InvokeOnShowInterstitialAd();
+            }
 
     public void HideGameObject()
     {
         Debug.Log("Hide Game Object Method");
         EventHandler.Instance.InvokeOnButtonClickSound();
-        EventHandler.Instance.InvokeOnNextScene();    
+        EventHandler.Instance.InvokeOnNextScene();
+
+        // Load Level
+        LoadLevel();
     }
 
     public void RateApp()
@@ -62,11 +106,5 @@ public class UIManager : GenericSingleton<UIManager>
     {
         EventHandler.Instance.InvokeOnButtonClickSound();
         EventHandler.Instance.InvokeOnMoreApps();
-    }
-
-    public void ShareApp()
-    {
-        EventHandler.Instance.InvokeOnButtonClickSound();
-        EventHandler.Instance.InvokeOnShareApp();
     }
 }

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 3EyeMakeUp
   m_EditorClassIdentifier: 
   itemId: 3
-  counter: 0
+  counter: 3
   itemName: EyeMakeUp
-  buttonSprite: {fileID: 0}
+  buttonSprite: {fileID: 7607723276527991394, guid: 6eec147e0ead840718976c61b91772c0, type: 3}
   itemArray:
   - {fileID: -3717786684037222153, guid: faf047f85ff6b4d66ae4d7157e1f8ab0, type: 3}
   - {fileID: 4243335753088826345, guid: faf047f85ff6b4d66ae4d7157e1f8ab0, type: 3}
@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: -94803680293972944, guid: faf047f85ff6b4d66ae4d7157e1f8ab0, type: 3}
   - {fileID: -439915942935336559, guid: faf047f85ff6b4d66ae4d7157e1f8ab0, type: 3}
   - {fileID: -1004154880411021862, guid: faf047f85ff6b4d66ae4d7157e1f8ab0, type: 3}
+  isReloadForCurrentLevel: 0
+  isReloadForNextLevel: 1
