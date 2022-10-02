@@ -19,66 +19,64 @@ public class UIManager : GenericSingleton<UIManager>
     [SerializeField]
     Button btnHome;
 
-    int levelCount = 1;
+    int levelCount = 0;
     private void Start()
     {
         btnPlay.onClick.AddListener(HideGameObject);
         btnRateUs.onClick.AddListener(RateApp);
         btnRestore.onClick.AddListener(RestoreApp);
         btnMore.onClick.AddListener(MoreApps);
-        btnNext.onClick.AddListener(LoadLevel);
+        btnNext.onClick.AddListener(LoadNextLevel);
         btnHome.onClick.AddListener(LoadHome);
     }
 
     private void LoadHome()
     {
+        levelCount = 0;
         EventHandler.Instance.InvokeOnButtonClickSound();
-        GameManager.Instance.Home();
+        //GameManager.Instance.Home();
+        GameManager.Instance.Next();
+
     }
 
-    public void LoadLevel()
+    private void LoadNextLevel()
     {
-        Debug.Log("Click on NextButton");
-        LoadNextLevel(levelCount);
-    }
-    public void LoadPreviousLevel()
-    {
-        Debug.Log("Click on PreviousButton");
-        LoadPreviousLevel(levelCount);
-    }
-
-    private void LoadNextLevel(int i) {
+        Debug.Log("Click on Next Button");
         EventHandler.Instance.InvokeOnButtonClickSound();
-        if (GameManager.Instance.Body.Length>=i)
+        if (levelCount < GameManager.Instance.Body.Length)
         {
-            EventHandler.Instance.InvokeOnLoadLevel(i);
-            i++;
-            levelCount = i;
+            levelCount++;
+            EventHandler.Instance.InvokeOnLoadLevel(levelCount);   
         }
         else
         {
+            GameManager.Instance.DeActivateAllLevels();
             GameManager.Instance.Next();
         }
+        print(levelCount + " in Load Next Level");
     }
 
-    private void LoadPreviousLevel(int i)
+    public void LoadPreviousLevel()
     {
+        Debug.Log("Click on Previous Button " + levelCount);
         EventHandler.Instance.InvokeOnButtonClickSound();
-        if (i>0)
+        levelCount--;
+        if (levelCount > 0)
         {
-            i--;
-            levelCount = i;
-            EventHandler.Instance.InvokeOnLoadLevel(i);
+            EventHandler.Instance.InvokeOnLoadLevel(levelCount);
         }
         else
         {
             GameManager.Instance.Back();
         }
+        print(levelCount + " in Load Previous Level");
+
     }
 
-    public void ShowInterestratialAd() {
+    public void ShowInterestratialAd()
+    {
         EventHandler.Instance.InvokeOnShowInterstitialAd();
-            }
+    }
 
     public void HideGameObject()
     {
@@ -87,7 +85,7 @@ public class UIManager : GenericSingleton<UIManager>
         EventHandler.Instance.InvokeOnNextScene();
 
         // Load Level
-        LoadLevel();
+        LoadNextLevel();
     }
 
     public void RateApp()

@@ -58,6 +58,8 @@ public class GameManager : GenericSingleton<GameManager>
         EventHandler.Instance.OnLoadLevelAction += LoadLevel;
     }
 
+    
+
     private void ShareApp()
     {
         Debug.Log("Share Button Clicked");
@@ -146,6 +148,12 @@ public class GameManager : GenericSingleton<GameManager>
            ScreenAreas[i-1].SetActive(false);
            UIPanels[i-1].SetActive(false);
        }
+       if(i >= ScreenAreas.Length)
+        {
+            i = 0;
+            ScreenAreas[i].SetActive(true);
+            UIPanels[i].SetActive(true);
+        }
        i++;
        print (i+" in next");
    }
@@ -174,18 +182,26 @@ public class GameManager : GenericSingleton<GameManager>
         UIPanels[i].SetActive(true);
     }
 
-    private void LoadLevel(int levelId)
+    public void LoadLevel(int levelId)
     {
         for(int i=1;i<=body.Length;i++)
         {
             body[i - 1].SetActive(false);
-            print("False LevelId is " + levelId);
+            print("Rikhil False LevelId is " + levelId);
             if (levelId == i)
             {
                 body[i-1].SetActive(true);
                 //levelBgImage[i - 1].sprite = LevelSetUpSO.LevelBg;
-                print("LevelId is " + levelId);
+                print(" Rikhil LevelId is " + levelId);
             }
+        }
+    }
+
+    internal void DeActivateAllLevels()
+    {
+        for (int i = 1; i <= body.Length; i++)
+        {
+            body[i - 1].SetActive(false);
         }
     }
 
