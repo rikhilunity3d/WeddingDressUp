@@ -24,3 +24,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4c7e9aa2b9c5642658a91636b386ca11, type: 2}
   - {fileID: 11400000, guid: 24192a7fcadcb4a9684afc303742b0a5, type: 2}
   - {fileID: 11400000, guid: 65cc19c29a6434e899a345f24e06ceae, type: 2}
+  subSetChangableSO:
+  - {fileID: 11400000, guid: 65cc19c29a6434e899a345f24e06ceae, type: 2}
+  - {fileID: 11400000, guid: a71ec55bf5eba4da6946f36d6a03d8de, type: 2}
+  - {fileID: 11400000, guid: 8fbeda28e3a524cf385efd58b02a117b, type: 2}
+  - {fileID: 11400000, guid: 46306d53bf40743b284f5e3cb4fa5223, type: 2}
+  - {fileID: 11400000, guid: d043081a6ce304013ba9d4ab9ed322a5, type: 2}
+  - {fileID: 11400000, guid: 24192a7fcadcb4a9684afc303742b0a5, type: 2}
+  - {fileID: 11400000, guid: 4c7e9aa2b9c5642658a91636b386ca11, type: 2}

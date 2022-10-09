@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
-  m_Name: 6Hats
+  m_Name: 26Hats
   m_EditorClassIdentifier: 
-  itemId: 6
+  itemId: 26
   counter: 0
   itemName: Hats
   buttonSprite: {fileID: 877779215589724563, guid: 6eec147e0ead840718976c61b91772c0, type: 3}

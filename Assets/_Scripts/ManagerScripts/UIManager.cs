@@ -19,7 +19,11 @@ public class UIManager : GenericSingleton<UIManager>
     [SerializeField]
     Button btnHome;
 
+    [SerializeField]
+    LevelSetUpScriptableObject[] LevelSetUpSO;
+
     int levelCount = 0;
+    
     private void Start()
     {
         btnPlay.onClick.AddListener(HideGameObject);
@@ -46,12 +50,35 @@ public class UIManager : GenericSingleton<UIManager>
         if (levelCount < GameManager.Instance.Body.Length)
         {
             levelCount++;
-            EventHandler.Instance.InvokeOnLoadLevel(levelCount);   
+            EventHandler.Instance.InvokeOnLoadLevel(levelCount);
+            for (int z = 0; z < LevelSetUpSO[levelCount-1].SubSetChangableSO.Length; z++)
+            {
+                if (LevelSetUpSO[levelCount-1].SubSetChangableSO.Length != 0)
+                {
+                    int id = z + 1;
+
+                    EventHandler.Instance.InvokeOnLoadSpriteFromSO(LevelSetUpSO[levelCount-1].SubSetChangableSO[id - 1]);
+                }
+            }
         }
         else
         {
             GameManager.Instance.DeActivateAllLevels();
             GameManager.Instance.Next();
+
+            for(int i =0;i <LevelSetUpSO.Length;i++)
+            {
+                for (int z = 0; z < LevelSetUpSO[i].SubSetChangableSO.Length; z++)
+                {
+                    if (LevelSetUpSO[i].SubSetChangableSO.Length != 0)
+                    {
+                        int id = z + 1;
+
+                        EventHandler.Instance.InvokeOnLoadSpriteFromSO(LevelSetUpSO[i].SubSetChangableSO[id - 1]);
+                    }
+                }
+            }
+
         }
         print(levelCount + " in Load Next Level");
     }

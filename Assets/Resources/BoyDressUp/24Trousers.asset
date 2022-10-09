@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5b48bfaa80b64be2bcbb9eb19f2a145, type: 3}
-  m_Name: 4Trousers
+  m_Name: 24Trousers
   m_EditorClassIdentifier: 
-  itemId: 4
+  itemId: 24
   counter: 0
   itemName: Trousers
   buttonSprite: {fileID: -8556943763508480657, guid: 6eec147e0ead840718976c61b91772c0, type: 3}

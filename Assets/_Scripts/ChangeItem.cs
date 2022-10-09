@@ -11,12 +11,8 @@ public class ChangeItem : MonoBehaviour
 //       Debug.Log("Change Item OnEnable");
        EventHandler.Instance.OnChangeableAction += ChangeItemSprite;
        EventHandler.Instance.OnLoadSpriteFromSO += LoadSpriteFromSO;
-   }
-
-    private void Start()
-    {
-        
     }
+
     private void OnDisable() {
        //Debug.Log("Change Item OnDisable");
         EventHandler.Instance.OnChangeableAction -= ChangeItemSprite;
